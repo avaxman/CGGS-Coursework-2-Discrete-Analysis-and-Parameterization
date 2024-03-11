@@ -28,7 +28,7 @@ if __name__ == '__main__':
     r = 1.0
 
     boundUV = compute_boundary_embedding(vertices, boundVertices, r)
-    UV = compute_tutte_embedding(vertices, faces, d0, W, boundVertices, boundUV)
+    UV = compute_tutte_embedding(vertices, d0, W, boundVertices, boundUV)
 
     ps.register_surface_mesh("UV Mesh", np.column_stack((UV[:, 0], np.zeros(UV.shape[0]), UV[:, 1])), faces)
 

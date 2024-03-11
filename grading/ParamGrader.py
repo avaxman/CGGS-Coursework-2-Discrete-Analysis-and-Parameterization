@@ -28,7 +28,7 @@ if __name__ == '__main__':
         L, vorAreas, d0, W = compute_laplacian(vertices, faces, edges, edgeBoundMask, EF)
         r = 5.5
         boundUV = compute_boundary_embedding(vertices, boundVertices, r)
-        UV = compute_tutte_embedding(vertices, faces, d0, W, boundVertices, boundUV)
+        UV = compute_tutte_embedding(vertices, d0, W, boundVertices, boundUV)
 
         print("boundUV error: ", np.max(np.abs(loaded_data['boundUV'] - boundUV)))
         print("UV error: ", np.max(np.abs(loaded_data['UV'] - UV)))

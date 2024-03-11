@@ -153,6 +153,6 @@ def compute_boundary_embedding(vertices, boundVertices, r):
     return np.zeros((boundVertices.shape[0],2)) #stub
 
 
-def compute_tutte_embedding(vertices, faces, d0, W, boundVertices, boundUV):
+def compute_tutte_embedding(vertices, d0, W, boundVertices, boundUV):
     #TODO: complete
     return np.zeros((vertices.shape[0],2)) #stub
